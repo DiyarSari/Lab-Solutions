@@ -1,7 +1,5 @@
 # User Management System
 
-Bu proje, Go (Golang) ile yazılmış bir backend ve React ile oluşturulmuş bir frontend içeren tam işlevli bir kullanıcı yönetim sistemidir.
-
 ## 🔧 Gereksinimler
 
 Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:

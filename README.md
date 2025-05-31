@@ -1,6 +1,6 @@
 # User Management System
 
-## 🔧 Gereksinimler
+## Gereksinimler
 
 Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:
 
@@ -8,7 +8,7 @@ Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:
 - Go (v1.16 veya üzeri)
 - SQLite
 
-## 📁 Proje Yapısı
+## Proje Yapısı
 
 user-management/
 ├── backend/
@@ -23,7 +23,7 @@ user-management/
     ├── package.json
     └── vite.config.ts
 
-## 🚀 Projeyi Çalıştırma
+## Projeyi Çalıştırma
 
 ### Backend
 
@@ -51,7 +51,7 @@ Sunucu şu adreste çalışır: http://localhost:8080
 
 Uygulama şu adreste çalışır: http://localhost:3000
 
-## 📡 API Uç Noktaları
+## API adresleri
 
 - GET /api/users → Tüm kullanıcıları getirir
 - GET /api/users/:id → Belirli bir kullanıcıyı getirir
@@ -59,7 +59,7 @@ Uygulama şu adreste çalışır: http://localhost:3000
 - PUT /api/users/:id → Kullanıcıyı günceller
 - DELETE /api/users/:id → Kullanıcıyı siler
 
-## ✨ Özellikler
+## Özellikler
 
 - Kullanıcıları tablo halinde listeleme
 - Yeni kullanıcı ekleme

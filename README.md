@@ -1,15 +1,15 @@
- User Management System
+```
+User Management System
 
- Gereksinimler
+Gereksinimler
 
 Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:
-
 - Node.js (v14 veya üzeri)
 - Go (v1.16 veya üzeri)
 - SQLite
 
- Proje Yapısı
-'''
+Proje Yapısı
+
 user-management/
 ├── backend/
 │   ├── main.go
@@ -22,10 +22,10 @@ user-management/
     │   └── App.tsx
     ├── package.json
     └── vite.config.ts
-'''
- Projeyi Çalıştırma
 
-   Backend
+Projeyi Çalıştırma
+
+Backend
 
 1. backend klasörüne geçin:
    cd backend
@@ -38,7 +38,7 @@ user-management/
 
 Sunucu şu adreste çalışır: http://localhost:8080
 
-   Frontend
+Frontend
 
 1. frontend klasörüne geçin:
    cd frontend
@@ -51,17 +51,18 @@ Sunucu şu adreste çalışır: http://localhost:8080
 
 Uygulama şu adreste çalışır: http://localhost:3000
 
- API adresleri
+API Adresleri
 
-- GET /api/users → Tüm kullanıcıları getirir
-- GET /api/users/:id → Belirli bir kullanıcıyı getirir
-- POST /api/users → Yeni kullanıcı oluşturur
-- PUT /api/users/:id → Kullanıcıyı günceller
-- DELETE /api/users/:id → Kullanıcıyı siler
+GET /api/users           → Tüm kullanıcıları getirir
+GET /api/users/:id       → Belirli kullanıcıyı getirir
+POST /api/users          → Yeni kullanıcı oluşturur
+PUT /api/users/:id       → Kullanıcıyı günceller
+DELETE /api/users/:id    → Kullanıcıyı siler
 
- Özellikler
+Özellikler
 
 - Kullanıcıları tablo halinde listeleme
 - Yeni kullanıcı ekleme
 - Var olan kullanıcıyı düzenleme
 - Kullanıcı silme
+``` 

@@ -9,7 +9,7 @@ Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:
 - SQLite
 
  Proje Yapısı
-
+'''
 user-management/
 ├── backend/
 │   ├── main.go
@@ -22,7 +22,7 @@ user-management/
     │   └── App.tsx
     ├── package.json
     └── vite.config.ts
-
+'''
  Projeyi Çalıştırma
 
    Backend

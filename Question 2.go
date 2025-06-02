@@ -4,20 +4,20 @@ import (
 	"fmt"
 )
 
-func print_number(sayi int) {
-	if sayi < 2 {
+func print_number(number int) {
+	if number < 2 {
 		return
 	}
 
-	print_number(sayi / 2)
+	print_number(number / 2)
 
-	fmt.Println(sayi)
+	fmt.Println(number)
 }
 
 func main() {
-	var numara int
-	fmt.Print("Bir Sayi Gir: ")
-	fmt.Scan(&numara)
+	var input int
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&input)
 
-	print_number(numara)
+	print_number(input)
 }

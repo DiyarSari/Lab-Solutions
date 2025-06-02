@@ -4,35 +4,35 @@ import (
 	"fmt"
 )
 
-func a_counter(kelime string) int {
-	sayac := 0
-	for _, harf := range kelime {
-		if harf == 'a' {
-			sayac++
+func a_counter(word string) int {
+	count := 0
+	for _, char := range word {
+		if char == 'a' {
+			count++
 		}
 	}
-	return sayac
+	return count
 }
 
 func main() {
-	kelimeler := []string{"aaaasd", "a", "aab", "aaabcd", "ef", "cssssssd", "fdz", "kf", "zc", "lklklklklklklklkl", "l"}
-	adet := len(kelimeler)
+	words := []string{"aaaasd", "a", "aab", "aaabcd", "ef", "cssssssd", "fdz", "kf", "zc", "lklklklklklklklkl", "l"}
+	length := len(words)
 
-	for i := 0; i < adet; i++ {
-		for j := i + 1; j < adet; j++ {
-			a1 := a_counter(kelimeler[i])
-			a2 := a_counter(kelimeler[j])
+	for i := 0; i < length; i++ {
+		for j := i + 1; j < length; j++ {
+			a1 := a_counter(words[i])
+			a2 := a_counter(words[j])
 
-			if a1 < a2 || (a1 == a2 && len(kelimeler[i]) < len(kelimeler[j])) {
-				kelimeler[i], kelimeler[j] = kelimeler[j], kelimeler[i]
+			if a1 < a2 || (a1 == a2 && len(words[i]) < len(words[j])) {
+				words[i], words[j] = words[j], words[i]
 			}
 		}
 	}
 
 	fmt.Print("[")
-	for i, kelime := range kelimeler {
-		fmt.Printf("\"%s\"", kelime)
-		if i < adet-1 {
+	for i, word := range words {
+		fmt.Printf("\"%s\"", word)
+		if i < length-1 {
 			fmt.Print(", ")
 		}
 	}

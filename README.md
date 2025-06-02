@@ -1,14 +1,13 @@
-```
 User Management System
 
-Gereksinimler
+Requirements
 
-Projeyi çalıştırmak için aşağıdaki teknolojilere ihtiyacınız var:
-- Node.js (v14 veya üzeri)
-- Go (v1.16 veya üzeri)
+To run the project, you need the following technologies:
+- Node.js (v14 or higher)
+- Go (v1.16 or higher)
 - SQLite
 
-Proje Yapısı
+Project Structure
 
 user-management/
 ├── backend/
@@ -23,46 +22,45 @@ user-management/
     ├── package.json
     └── vite.config.ts
 
-Projeyi Çalıştırma
+Running the Project
 
 Backend
 
-1. backend klasörüne geçin:
+1. Navigate to the backend folder:
    cd backend
 
-2. Gerekli Go bağımlılıklarını yükleyin:
+2. Install Go dependencies:
    go mod tidy
 
-3. Sunucuyu başlatın:
+3. Start the server:
    go run main.go
 
-Sunucu şu adreste çalışır: http://localhost:8080
+The server will run at: http://localhost:8080
 
 Frontend
 
-1. frontend klasörüne geçin:
+1. Navigate to the frontend folder:
    cd frontend
 
-2. Node modüllerini yükleyin:
+2. Install Node modules:
    npm install
 
-3. Geliştirme sunucusunu başlatın:
+3. Start the development server:
    npm start
 
-Uygulama şu adreste çalışır: http://localhost:3000
+The application will run at: http://localhost:3000
 
-API Adresleri
+API Endpoints
 
-GET /api/users           → Tüm kullanıcıları getirir
-GET /api/users/:id       → Belirli kullanıcıyı getirir
-POST /api/users          → Yeni kullanıcı oluşturur
-PUT /api/users/:id       → Kullanıcıyı günceller
-DELETE /api/users/:id    → Kullanıcıyı siler
+GET /api/users           → Retrieves all users  
+GET /api/users/:id       → Retrieves a specific user  
+POST /api/users          → Creates a new user  
+PUT /api/users/:id       → Updates a user  
+DELETE /api/users/:id    → Deletes a user
 
-Özellikler
+Features
 
-- Kullanıcıları tablo halinde listeleme
-- Yeni kullanıcı ekleme
-- Var olan kullanıcıyı düzenleme
-- Kullanıcı silme
-``` 
+- List users in a table  
+- Add new user  
+- Edit existing user  
+- Delete user  

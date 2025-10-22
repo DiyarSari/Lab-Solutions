@@ -12,16 +12,31 @@ Project Structure
 
 user-management/
 ├── backend/
-│   ├── main.go
-│   └── go.mod
+│   ├── data/
+│   │   └── users.db
+│   ├── go.mod
+│   ├── go.sum
+│   └── main.go
+│
 └── frontend/
-    ├── src/
-    │   ├── components/
-    │   │   ├── UserList.tsx
-    │   │   └── UserForm.tsx
-    │   └── App.tsx
+    ├── index.html
+    ├── vite.config.ts
     ├── package.json
-    └── vite.config.ts
+    ├── package-lock.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    │
+    └── src/
+        ├── api/
+        │   ├── api.ts
+        │   └── User.ts
+        │
+        ├── components/
+        │   ├── UserList.tsx
+        │   └── UserForm.tsx
+        │
+        ├── App.tsx
+        └── main.tsx
 
 Running the Project
 

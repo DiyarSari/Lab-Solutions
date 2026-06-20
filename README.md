@@ -28,31 +28,31 @@ Optional but recommended:
 
 ## Project Structure
 
-```
+## Project Structure
+
+```text
 Question 4/
 ├── backend/
-│   ├── main.go              # Entry point and HTTP server
-│   ├── go.mod               # Go module dependencies
-│   ├── go.sum               # Dependency checksums
+│   ├── main.go
+│   ├── go.mod
+│   ├── go.sum
 │   └── data/
-│       └── users.db         # SQLite database file
-│
-└── frontend/
-    ├── index.html           # Main HTML file
-    ├── vite.config.ts       # Vite configuration
-    ├── tsconfig.json        # TypeScript configuration
-    ├── package.json         # npm dependencies
-    │
-    └── src/
-        ├── main.tsx         # React entry point
-        ├── App.tsx          # Root component
-        ├── api/
-        │   ├── api.ts       # HTTP client and API calls
-        │   └── User.ts      # User type definitions
-        │
-        └── components/
-            ├── UserList.tsx # Display users in table
-            └── UserForm.tsx # Form for create/edit users
+│       └── users.db
+
+├── frontend/
+│   ├── index.html
+│   ├── vite.config.ts
+│   ├── tsconfig.json
+│   ├── package.json
+│   └── src/
+│       ├── main.tsx
+│       ├── App.tsx
+│       ├── api/
+│       │   ├── api.ts
+│       │   └── User.ts
+│       └── components/
+│           ├── UserList.tsx
+│           └── UserForm.tsx
 ```
 
 ## Architecture

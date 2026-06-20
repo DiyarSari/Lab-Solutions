@@ -30,7 +30,7 @@ Optional but recommended:
 
 ## Project Structure
 
-```
+```text
 Question 4/
 ├── backend/
 │   ├── main.go
